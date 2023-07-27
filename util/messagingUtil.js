@@ -95,7 +95,7 @@ limitations under the License.
 				params[ pair ] = "";
 			}
 			else {
-				params[ decodeURIComponent(pair.substr(0,pair.indexOf('='))) ] = decodeURIComponent(pair.substr(pair.indexOf('=')+1));
+				params[ decodeURIComponent(pair.substring(0,pair.indexOf('='))) ] = decodeURIComponent(pair.substring(pair.indexOf('=')+1));
 			}
 		} );
 
